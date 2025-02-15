@@ -7,6 +7,9 @@
 
 <script>
 export default {
-  name: 'About'
-};
+  name: 'AboutPage',
+  props: {
+    msg: String
+  }
+}
 </script>
