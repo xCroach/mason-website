@@ -1,9 +1,10 @@
 <template>
-  <div>
-    <h1>About Me</h1>
+  <div class="about">
+    <h1>
       <span>
         This is the about section of my personal website.
       </span>
+    </h1>
   </div>
 </template>
 
@@ -15,3 +16,20 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+</style>

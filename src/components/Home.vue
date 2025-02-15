@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <h1>
       <span>
         My name is Martin and I am a Software Developer from Austria.
