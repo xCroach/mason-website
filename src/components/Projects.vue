@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'Page',
+  name: 'ProjectPage',
   props: {
     msg: String
   }

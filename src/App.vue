@@ -2,9 +2,15 @@
   <img alt="Mason Studios Logo" src="./assets/MasonStudiosLogo.png" width="710px" height="400px">
   <div>
     <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/components/about">About</router-link>
-      <router-link to="/components/projects">Projects</router-link>
+      <router-link to="/">
+        <button class="btn">Home</button>
+      </router-link>
+      <router-link to="/components/about">
+        <button class="btn">About</button>
+      </router-link>
+      <router-link to="/components/projects">
+        <button class="btn">Projects</button>
+      </router-link>
     </nav>
     <router-view />
   </div>
