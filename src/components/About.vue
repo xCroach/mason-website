@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>About Me</h1>
-    <p>This is the about section of my personal website.</p>
+      <span>
+        This is the about section of my personal website.
+      </span>
   </div>
 </template>
 
