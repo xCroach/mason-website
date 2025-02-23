@@ -1,39 +1,21 @@
 <template>
-  <div class="relative min-h-screen bg-cover bg-center" :style="backgroundStyle">
-    <!-- Navbar -->
-    <nav class="absolute top-0 left-0 w-full flex justify-center p-4 bg-white/50 backdrop-blur-md shadow-lg">
-      <div class="flex space-x-4">
-        <router-link to="/">
-          <button class="btn">Home</button>
-        </router-link>
-        <router-link to="/components/about">
-          <button class="btn">About</button>
-        </router-link>
-        <router-link to="/components/projects">
-          <button class="btn">Projects</button>
-        </router-link>
-      </div>
-    </nav>
+  <Sidebar>
 
-    <!-- Main Content -->
-    <div class="flex flex-col items-center justify-center min-h-screen">
-      <img alt="Mason Studios Logo" src="./assets/MasonStudiosLogo.png" class="w-[710px] h-[400px] drop-shadow-lg" />
-      <router-view />
-    </div>
+  </Sidebar>
+  <div :style="{ 'margin-left':sidebarWidth}">
+    <router-view />
   </div>
 </template>
 
 <script>
+import Sidebar from './components/Sidebar/SideBar.vue'
+import { sidebarWidth } from "@/components/Sidebar/state";
+
 export default {
-  computed: {
-    backgroundStyle() {
-      return {
-        backgroundImage: `url('https://picsum.photos/1920/1080?random=${Math.random()}')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      };
-    }
+  name: 'App',
+  components: { Sidebar },
+  setup(){
+    return {sidebarWidth}
   }
 };
 </script>
