@@ -1,5 +1,4 @@
 <template>
-  <img alt="Mason Studios Logo" src="./assets/MasonStudiosLogo.png" width="710px" height="400px">
   <Sidebar>
   </Sidebar>
   <div :style="{ 'margin-left':sidebarWidth}">

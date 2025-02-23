@@ -5,7 +5,7 @@
         <div>V</div>
         <div>S</div>
       </span>
-      <span v-else>Vue Sidebar</span>/
+      <span v-else><img alt="Mason Studios Logo" src="src/assets/MasonStudiosLogo.png" width="177.5px" height="100px"></span>/
     </h1>
 
     <SidebarLink icon="fas fa-home" to="/">Home</SidebarLink>
