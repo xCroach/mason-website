@@ -21,9 +21,5 @@ export default {
 </script>
 
 <style scoped>
-.btn {
-  @apply px-6 py-3 text-lg font-semibold rounded-lg transition duration-300 shadow-md
-  bg-blue-500 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300;
-}
 </style>
 
