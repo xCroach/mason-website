@@ -23,12 +23,15 @@
 <script>
 export default {
   name: 'App',
-  data() {
-    return {
-      backgroundStyle: {
-        backgroundImage: `url('https://picsum.photos/1920/1080')`
-      }
-    };
+  computed: {
+    backgroundStyle() {
+      return {
+        backgroundImage: `url('https://picsum.photos/1920/1080?random=${Math.random()}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      };
+    }
   }
 };
 </script>
