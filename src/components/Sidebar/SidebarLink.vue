@@ -43,7 +43,7 @@ export default {
   align-items: center;
 
   cursor: pointer;
-  postion: relative;
+  position: relative;
   font-weight: 400;
   user-select: none;
 
