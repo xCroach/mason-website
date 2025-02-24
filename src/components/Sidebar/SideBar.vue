@@ -8,13 +8,13 @@
       <span v-else><img alt="Mason Studios Logo" src="src/assets/MasonStudiosLogo.png" width="177.5px" height="100px"></span>/
     </h1>
 
-    <SidebarLink icon="pi-home" to="/">Home</SidebarLink>
-    <SidebarLink icon="pi-user" to="src/components/About.vue">About</SidebarLink>
-    <SidebarLink icon="pi-server" to="src/components/Projects.vue">Projects</SidebarLink>
+    <SidebarLink icon="pi pi-home" to="/">Home</SidebarLink>
+    <SidebarLink icon="pi pi-user" to="src/components/About.vue">About</SidebarLink>
+    <SidebarLink icon="pi pi-server" to="src/components/Projects.vue">Projects</SidebarLink>
     <span class="collapse-icon"
           :class="{ 'rotate-180': collapsed }"
           @click="toggleSidebar">
-      <i class="pi-angle-double-left"></i>/
+      <i class="pi pi-angle-double-left"></i>/
     </span>
     </div>
 </template>
