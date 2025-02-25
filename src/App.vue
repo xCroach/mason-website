@@ -1,5 +1,5 @@
 <template>
-  <Menubar :model="items"/>
+  <Menubar id="nav" :model="items"/>
 
   <main>
     <router-view/>
@@ -41,4 +41,10 @@ export default {
 </script>
 
 <style scoped>
+#nav {
+  font-size: 1.2rem;
+  justify-content: center;
+  background: #faebd7A0;
+  --p-menubar-gap: 1.6rem;
+}
 </style>

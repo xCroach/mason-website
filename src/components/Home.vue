@@ -1,11 +1,10 @@
 <template>
-  <div class="home">
-    <h1>
-      <span>
-        My name is Martin and I am a Software Developer from Austria.
-      </span>
-    </h1>
-  </div>
+  <h1>Welcome to my Website!</h1>
+
+  <article>
+    <p>My name is Martin and I am a Software Developer from Austria.</p>
+    <img src="../assets/MasonStudiosLogo.png" alt="Logo"/>
+  </article>
 </template>
 
 <script>
@@ -19,18 +18,27 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+:global(main) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+h1 {
+  text-align: center;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 50vw;
 }
-a {
-  color: #42b983;
+
+img {
+  width: 100%;
 }
 </style>
