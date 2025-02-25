@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    background: url("./assets/BG.jpg");
+    background: url("assets/BG.jpg");
     background-size: 1920px 1080px;
     /*url(https://picsum.photos/1920/1080);*/
     /*background-color: rgba(5,2,18,0.95);*/
