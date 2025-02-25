@@ -7,22 +7,24 @@
 
 <script setup>
 import {ref} from "vue";
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
 const items = ref([
   {
     label: 'Home',
     icon: 'pi pi-home',
-    url: '/'
+    command: () => router.push('/')
   },
   {
     label: 'About',
     icon: 'pi pi-user',
-    url: '/components/about'
+    command: () => router.push('/about')
   },
   {
     label: 'Projects',
     icon: 'pi pi-folder',
-    url: '/components/projects'
+    command: () => router.push('/projects')
   },
 ]);
 </script>
