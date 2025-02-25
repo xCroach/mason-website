@@ -1,20 +1,16 @@
 <template>
-  <Sidebar>
-  </Sidebar>
-  <div :style="{ 'margin-left':sidebarWidth}">
+  <div>
     <router-view />
   </div>
 </template>
 
 <script>
-import Sidebar from './components/Sidebar/SideBar.vue'
-import { sidebarWidth } from "@/components/Sidebar/state";
 
 export default {
   name: 'App',
-  components: { Sidebar },
+  components: { },
   setup(){
-    return {sidebarWidth}
+    return {}
   }
 };
 </script>
