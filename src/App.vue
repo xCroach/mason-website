@@ -1,8 +1,7 @@
 <template>
   <Menubar id="nav" :model="items"/>
-
   <main>
-    <router-view/>
+      <router-view/>
   </main>
 </template>
 
@@ -18,12 +17,12 @@ const items = ref([
   {
     label: 'About',
     icon: 'pi pi-user',
-    url: '/about'
+    url: '/components/about'
   },
   {
     label: 'Projects',
     icon: 'pi pi-folder',
-    url: '/projects'
+    url: '/components/projects'
   },
 ]);
 </script>
@@ -42,9 +41,10 @@ export default {
 
 <style scoped>
 #nav {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   justify-content: center;
-  background: #faebd7A0;
+  background: rgba(9,95,99,0.55);
   --p-menubar-gap: 1.6rem;
+
 }
 </style>

@@ -13,8 +13,11 @@ html, body {
 }
 
 body {
-    background: url(https://picsum.photos/1920/1080);
-    backdrop-filter: blur(1rem);
+    background: url("./assets/BG.jpg");
+    background-size: 1920px 1080px;
+    /*url(https://picsum.photos/1920/1080);*/
+    /*background-color: rgba(5,2,18,0.95);*/
+    /*backdrop-filter: blur(1rem);*/
 }
 
 #app {
