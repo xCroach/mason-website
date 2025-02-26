@@ -2,9 +2,11 @@
   <header>
     <img src="../assets/MasonStudiosTextBlue.png" alt="Logo"/>
   </header>
-  <h1>Welcome to my Website!</h1>
+  <h1 class="batman-text">Welcome to Mason Studios!</h1>
   <article>
-    <p>My name is Martin and I am a Software Developer from Austria.</p>
+    <p>My name is Martin and I am a Software Developer from Austria with a passion for games.
+      On my website I tell you a little bit about myself and give you an overview about some of my projects.
+    </p>
   </article>
 </template>
 
@@ -50,5 +52,16 @@ header {
 
 img {
   width: 100%;
+}
+
+@font-face {
+  font-family: 'BatmanForever';
+  src: url('@/assets/fonts/batmfa__.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.batman-text {
+  font-family: 'BatmanForever', sans-serif;
 }
 </style>
