@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery-container">
+  <div class="gallery-container" style="width: 100%">
     <Splitter>
       <SplitterPanel class="flex items-center justify-center" :size="70">
         <Galleria :value="images"
@@ -9,12 +9,12 @@
                   :transitionInterval="5000"
                   v-model:activeIndex="currentIndex"
                   @change="onChange"
-                  containerStyle="max-width: 800px; margin: auto">
+                  containerStyle="max-width: 100%; margin: auto">
           <template #item="slotProps">
-            <img :src="slotProps.item.image" :alt="slotProps.item.title" class="galleria-image" />
+            <img :src="slotProps.item.image" :alt="slotProps.item.title" class="galleria-image" style="display: block"/>
           </template>
           <template #thumbnail="slotProps">
-            <img :src="slotProps.item.thumbnail" :alt="slotProps.item.title" class="galleria-thumbnail" />
+            <img :src="slotProps.item.thumbnail" :alt="slotProps.item.title" class="galleria-thumbnail" style="display: block"/>
           </template>
         </Galleria>
       </SplitterPanel>
@@ -23,6 +23,9 @@
         <span style="font-size: 1.3rem">
           {{images[currentIndex].description}}
         </span>
+        <p class="chips">
+          <Chip label="Microsoft" icon="pi pi-microsoft  "></Chip>
+        </p>
       </SplitterPanel>
     </Splitter>
   </div>
@@ -33,6 +36,7 @@
 import Galleria from 'primevue/galleria';
 import Splitter from "primevue/splitter";
 import SplitterPanel from "primevue/splitterpanel";
+import Chip from "primevue/chip";
 
 //Import Images
 import apophis from "@/assets/images/Apophis.jpg";
@@ -44,7 +48,7 @@ import neptun from "@/assets/images/Neptuns Odyssey.png"
 
 export default {
   name: 'ProjectPage',
-  components: {Galleria,Splitter,SplitterPanel},
+  components: {Galleria,Splitter,SplitterPanel,Chip},
   data() {
     return {
       images: [
@@ -127,5 +131,9 @@ img {
 .batman-text {
   font-family: 'BatmanForever', sans-serif;
   color: rgba(0,220,230,0.95);
+}
+
+.chips {
+
 }
 </style>

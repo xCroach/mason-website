@@ -14,7 +14,8 @@ html, body {
 
 body {
     background: url("assets/BG.jpg");
-    background-size: 1920px 1080px;
+    background-size: cover;
+    background-attachment: fixed;
     /*url(https://picsum.photos/1920/1080);*/
     /*background-color: rgba(5,2,18,0.95);*/
     /*backdrop-filter: blur(1rem);*/

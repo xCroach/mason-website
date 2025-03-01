@@ -1,6 +1,6 @@
 <template>
   <Menubar id="nav" :model="items"/>
-  <main>
+  <main style="padding-top: 55px">
       <router-view/>
   </main>
 </template>
@@ -47,6 +47,12 @@ export default {
   justify-content: center;
   background: rgba(9,95,99,0.55);
   --p-menubar-gap: 1.6rem;
-
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 </style>
